@@ -1,0 +1,3 @@
+get current_user
+CurrentUser:root@localhost
+CurrentUser is:root@localhost
