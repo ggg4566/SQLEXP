@@ -158,3 +158,9 @@ if conf.dbms == 'db2':
   ```
 
   ![image-20200427190147278](https://raw.githubusercontent.com/ggg4566/SQLEXP/master/images/image-20200427190147278.png)
+
+**参考：**
+
+https://github.com/shack2/SuperSQLInjectionV1
+
+https://github.com/sqlmapproject/sqlmap
