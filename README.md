@@ -123,7 +123,7 @@ if conf.dbms == 'db2':
     SQL.update(mssql_payloads)
 ```
 
-​	一定注意的的是这里创建的数据库文件夹和py文件名和--dbms参数联系紧密，程序运行的时候通过--dbms的参数来决定加载那个数据库引擎的代码，所以果然--dbms=db2的时候，db2/db2_E.py,db2/db2_U.py等文件一定要存在。
+​	一定注意的的是这里创建的数据库文件夹和py文件名和--dbms参数联系紧密，程序运行的时候通过--dbms的参数来决定加载那个数据库引擎的代码，所以--dbms=db2的时候，db2/db2_E.py、db2/db2_U.py等文件一定要存在。
 
 ![image-20200427185702838](https://raw.githubusercontent.com/ggg4566/SQLEXP/master/images/image-20200427185702838.png)
 
