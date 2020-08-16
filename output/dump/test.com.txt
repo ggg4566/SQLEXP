@@ -1,1 +1,0 @@
-CurrentUser is:root@localhost
