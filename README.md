@@ -1,6 +1,16 @@
 # SQLEXP
 [![Python 2.7](https://img.shields.io/badge/python-2.7-yellow.svg)](https://www.python.org/)[![License](https://img.shields.io/badge/license-GPLv3-red.svg)](https://github.com/ggg4566/SQLEXP/blob/master/LICENSE)
 
+## Paper:https://xz.aliyun.com/t/7767
+
+PDF Download:[老树新花SQL 注入WAF绕过](./paper/SQL_BypassWaf.pdf)
+
+![](https://forum.90sec.com/uploads/default/original/2X/5/5e0caa92f44e2b37ae941511f0c52b2516f22886.png)
+
+---
+
+
+
 ​		SQL 注入利用工具，存在waf的情况下自定义编写tamper脚本 dump数据.
 
 ​		对于SQL注入漏洞利用通常情况下我们使用SQLMAP，在waf存在的场景下想利用自己独有的payload进行注入抓取数据，这个时候SQLMAP就显得那么力不存心，这种情况并不少见，对于ctfer来说经常会遇到，每次都要重复编写脚本对于一个IT人士来说显然不可接受。该工具正是解决waf存在场景下利用SQLMAP dump数据的难题，使用方法和SQLMAP基本相同，只要你会使用SQLMAP那么该工具上手非常容易.
